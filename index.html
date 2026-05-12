@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Steve • Personal Site</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Space+Grotesk:wght@500;600&amp;display=swap');
+        
+        body {
+            font-family: 'Inter', system_ui, sans-serif;
+        }
+        
+        .heading-font {
+            font-family: 'Space Grotesk', 'Inter', sans-serif;
+            font-weight: 600;
+        }
+
+        .modern-shadow {
+            box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+        }
+
+        .nav-link {
+            transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .nav-link:hover {
+            color: #111827;
+            transform: translateY(-1px);
+        }
+
+        .hero-bg {
+            background: linear-gradient(135deg, #f8fafc 0%, #f1e7ff 100%);
+        }
+
+        .section-padding {
+            padding-top: 6rem;
+            padding-bottom: 6rem;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900">
+    <!-- Navbar -->
+    <nav class="border-b border-slate-200 bg-white/80 backdrop-blur-lg sticky top-0 z-50">
+        <div class="max-w-5xl mx-auto px-6">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex items-center gap-x-3">
+                    <div class="w-9 h-9 bg-slate-900 rounded-2xl flex items-center justify-center">
+                        <span class="text-white text-xl font-semibold tracking-tighter">S</span>
+                    </div>
+                    <span class="text-2xl font-semibold tracking-tighter">Steve</span>
+                </div>
+                
+                <div class="hidden md:flex items-center gap-x-8 text-sm font-medium">
+                    <a href="#about" class="nav-link text-slate-600 hover:text-slate-900">About</a>
+                    <a href="#work" class="nav-link text-slate-600 hover:text-slate-900">Work</a>
+                    <a href="#contact" class="nav-link text-slate-600 hover:text-slate-900">Contact</a>
+                </div>
+                
+                <div class="flex items-center gap-x-3">
+                    <button onclick="window.location.href='#contact'"
+                            class="px-5 py-2.5 text-sm font-medium bg-white border border-slate-300 hover:border-slate-400 rounded-3xl transition-all">
+                        Get in touch
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="max-w-5xl mx-auto px-6 pt-20 pb-16">
+        <div class="max-w-2xl">
+            <div class="inline-flex items-center gap-x-2 px-4 py-1.5 rounded-3xl bg-white border border-slate-200 mb-8">
+                <div class="w-2 h-2 bg-emerald-500 rounded-full animate-pulse"></div>
+                <span class="text-sm font-medium text-slate-600">Currently open to opportunities</span>
+            </div>
+            
+            <h1 class="text-7xl md:text-8xl font-semibold tracking-tighter leading-none heading-font">
+                Hi, I'm<br>Steve.
+            </h1>
+            
+            <p class="mt-6 max-w-md text-xl text-slate-600">
+                Product designer and developer building delightful digital experiences.
+            </p>
+            
+            <div class="flex items-center gap-x-4 mt-10">
+                <button onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })" 
+                        class="px-8 py-4 bg-slate-900 hover:bg-black transition-all text-white font-semibold rounded-3xl flex items-center gap-x-3 shadow-lg shadow-slate-900/20">
+                    <span>Contact me</span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
+                
+                <button onclick="window.open('https://twitter.com', '_blank')" 
+                        class="px-6 py-4 border border-slate-300 hover:bg-white transition-all font-medium rounded-3xl flex items-center gap-x-2">
+                    <i class="fa-brands fa-twitter text-xl"></i>
+                    <span class="hidden md:inline">Follow on X</span>
+                </button>
+            </div>
+            
+            <div class="mt-8 flex items-center gap-x-2 text-sm text-slate-500">
+                <div class="flex -space-x-1">
+                    <div class="w-6 h-6 bg-slate-200 rounded-full border border-white"></div>
+                    <div class="w-6 h-6 bg-slate-300 rounded-full border border-white"></div>
+                    <div class="w-6 h-6 bg-slate-400 rounded-full border border-white"></div>
+                </div>
+                <span>Featured in 12+ projects this year</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <div id="about" class="max-w-5xl mx-auto px-6 py-16 border-t border-slate-200">
+        <div class="grid md:grid-cols-12 gap-x-12 items-center">
+            <div class="md:col-span-5">
+                <div class="uppercase tracking-[3px] text-xs font-semibold text-slate-500 mb-3">About me</div>
+                <h2 class="text-5xl font-semibold tracking-tighter heading-font">Building the future, one pixel at a time.</h2>
+            </div>
+            <div class="md:col-span-7 mt-6 md:mt-0">
+                <div class="prose prose-lg text-slate-600">
+                    <p>I'm a multidisciplinary designer and developer with 8+ years of experience creating digital products that people love. Currently based in San Francisco, I work at the intersection of design, code, and strategy.</p>
+                    <p class="mt-4">My approach combines clean aesthetics with thoughtful interactions, always focused on solving real problems for real users.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Work Preview -->
+    <div id="work" class="max-w-5xl mx-auto px-6 pb-16">
+        <div class="flex justify-between items-end mb-8">
+            <div>
+                <div class="uppercase tracking-[3px] text-xs font-semibold text-slate-500 mb-1">Selected work</div>
+                <h3 class="text-4xl font-semibold tracking-tight">Recent projects</h3>
+            </div>
+            <a href="#" class="hidden md:flex items-center text-sm font-medium group">View all projects <i class="fa-solid fa-arrow-right ml-2 group-hover:translate-x-1 transition"></i></a>
+        </div>
+        
+        <div class="grid md:grid-cols-3 gap-5">
+            <div class="bg-white border border-slate-200 rounded-3xl p-6 hover:shadow-xl transition-all group">
+                <div class="h-2 w-2 bg-blue-500 rounded-full mb-6"></div>
+                <div class="font-semibold text-xl">Arc Studio</div>
+                <div class="text-sm text-slate-500 mt-1">Design system &amp; platform</div>
+                <div class="mt-8 text-xs text-slate-400">2024</div>
+            </div>
+            
+            <div class="bg-white border border-slate-200 rounded-3xl p-6 hover:shadow-xl transition-all group">
+                <div class="h-2 w-2 bg-violet-500 rounded-full mb-6"></div>
+                <div class="font-semibold text-xl">Linear</div>
+                <div class="text-sm text-slate-500 mt-1">Productivity tools</div>
+                <div class="mt-8 text-xs text-slate-400">2023</div>
+            </div>
+            
+            <div class="bg-white border border-slate-200 rounded-3xl p-6 hover:shadow-xl transition-all group">
+                <div class="h-2 w-2 bg-emerald-500 rounded-full mb-6"></div>
+                <div class="font-semibold text-xl">Notion</div>
+                <div class="text-sm text-slate-500 mt-1">Knowledge base redesign</div>
+                <div class="mt-8 text-xs text-slate-400">2022</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div id="contact" class="max-w-5xl mx-auto px-6 py-20 bg-white border-t border-slate-200">
+        <div class="max-w-md">
+            <div class="uppercase tracking-[3px] text-xs font-semibold text-slate-500 mb-4">Let's connect</div>
+            <h2 class="text-5xl font-semibold tracking-tighter">Ready to collaborate?</h2>
+            
+            <p class="mt-5 text-lg text-slate-600">I'd love to hear about your project or just say hello.</p>
+            
+            <div class="mt-10">
+                <a href="mailto:steve@example.com" 
+                   class="inline-flex items-center px-8 py-4 bg-slate-900 text-white font-semibold rounded-3xl hover:bg-black transition-all text-lg group">
+                    Send me an email
+                    <i class="fa-solid fa-envelope ml-3 group-hover:rotate-12 transition"></i>
+                </a>
+            </div>
+            
+            <div class="mt-8 flex gap-x-6 text-sm">
+                <a href="#" class="flex items-center gap-x-2 text-slate-600 hover:text-slate-900">
+                    <i class="fa-brands fa-linkedin text-xl"></i>
+                    <span>LinkedIn</span>
+                </a>
+                <a href="#" class="flex items-center gap-x-2 text-slate-600 hover:text-slate-900">
+                    <i class="fa-brands fa-twitter text-xl"></i>
+                    <span>Twitter</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <footer class="border-t border-slate-200 py-6">
+        <div class="max-w-5xl mx-auto px-6 text-center text-xs text-slate-400">
+            © 2026 Steve. Crafted with care.
+        </div>
+    </footer>
+
+    <script>
+        // Tailwind script
+        function initializeTailwind() {
+            document.documentElement.style.setProperty('--accent', '#0f172a');
+        }
+        window.onload = initializeTailwind;
+    </script>
+</body>
+</html>
