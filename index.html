@@ -71,47 +71,59 @@
 
     <!-- Hero Section -->
     <div class="max-w-5xl mx-auto px-6 pt-20 pb-16">
-        <div class="max-w-2xl">
-            <div class="inline-flex items-center gap-x-2 px-4 py-1.5 rounded-3xl bg-white border border-slate-200 mb-8">
-                <div class="w-2 h-2 bg-emerald-500 rounded-full animate-pulse"></div>
-                <span class="text-sm font-medium text-slate-600">Currently open to opportunities</span>
-            </div>
-            
-            <h1 class="text-7xl md:text-8xl font-semibold tracking-tighter leading-none heading-font">
-                Hi, I'm<br>Steve.
-            </h1>
-            
-            <p class="mt-6 max-w-md text-xl text-slate-600">
-                Product designer and developer building delightful digital experiences.
-            </p>
-            
-            <div class="flex items-center gap-x-4 mt-10">
-                <button onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })" 
-                        class="px-8 py-4 bg-slate-900 hover:bg-black transition-all text-white font-semibold rounded-3xl flex items-center gap-x-3 shadow-lg shadow-slate-900/20">
-                    <span>Contact me</span>
-                    <i class="fa-solid fa-arrow-right"></i>
-                </button>
-                
-                <button onclick="window.open('https://twitter.com', '_blank')" 
-                        class="px-6 py-4 border border-slate-300 hover:bg-white transition-all font-medium rounded-3xl flex items-center gap-x-2">
-                    <i class="fa-brands fa-twitter text-xl"></i>
-                    <span class="hidden md:inline">Follow on X</span>
-                </button>
-            </div>
-            
-            <div class="mt-8 flex items-center gap-x-2 text-sm text-slate-500">
-                <div class="flex -space-x-1">
-                    <div class="w-6 h-6 bg-slate-200 rounded-full border border-white"></div>
-                    <div class="w-6 h-6 bg-slate-300 rounded-full border border-white"></div>
-                    <div class="w-6 h-6 bg-slate-400 rounded-full border border-white"></div>
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+            <div class="max-w-2xl">
+                <div class="inline-flex items-center gap-x-2 px-4 py-1.5 rounded-3xl bg-white border border-slate-200 mb-8">
+                    <div class="w-2 h-2 bg-emerald-500 rounded-full animate-pulse"></div>
+                    <span class="text-sm font-medium text-slate-600">Currently open to opportunities</span>
                 </div>
-                <span>Featured in 12+ projects this year</span>
+                
+                <h1 class="text-7xl md:text-8xl font-semibold tracking-tighter leading-none heading-font">
+                    Hi, I'm<br>Steve.
+                </h1>
+                
+                <p class="mt-6 max-w-md text-xl text-slate-600">
+                    Product designer and developer building delightful digital experiences.
+                </p>
+                
+                <div class="flex items-center gap-x-4 mt-10">
+                    <button onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })" 
+                            class="px-8 py-4 bg-slate-900 hover:bg-black transition-all text-white font-semibold rounded-3xl flex items-center gap-x-3 shadow-lg shadow-slate-900/20">
+                        <span>Contact me</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                    
+                    <button onclick="window.open('https://twitter.com', '_blank')" 
+                            class="px-6 py-4 border border-slate-300 hover:bg-white transition-all font-medium rounded-3xl flex items-center gap-x-2">
+                        <i class="fa-brands fa-twitter text-xl"></i>
+                        <span class="hidden md:inline">Follow on X</span>
+                    </button>
+                </div>
+                
+                <div class="mt-8 flex items-center gap-x-2 text-sm text-slate-500">
+                    <div class="flex -space-x-1">
+                        <div class="w-6 h-6 bg-slate-200 rounded-full border border-white"></div>
+                        <div class="w-6 h-6 bg-slate-300 rounded-full border border-white"></div>
+                        <div class="w-6 h-6 bg-slate-400 rounded-full border border-white"></div>
+                    </div>
+                    <span>Featured in 12+ projects this year</span>
+                </div>
+            </div>
+            
+            <!-- Profile Photo -->
+            <div class="hidden md:block relative">
+                <img src="https://picsum.photos/id/1005/500/600" 
+                     alt="Steve - Profile Photo" 
+                     class="rounded-3xl shadow-2xl modern-shadow w-full max-w-sm ml-auto">
+                <div class="absolute -bottom-4 -right-4 w-24 h-24 bg-white rounded-2xl border border-slate-200 flex items-center justify-center">
+                    <i class="fa-solid fa-user text-3xl text-slate-400"></i>
+                </div>
             </div>
         </div>
     </div>
 
     <!-- About Section -->
-    <div id="about" class="max-w-5xl mx-auto px-6 py-16 border-t border-slate-200">
+    <div id="about" class="max-w-5xl mx-auto px-6 py-16 border-t border-slate-200 relative">
         <div class="grid md:grid-cols-12 gap-x-12 items-center">
             <div class="md:col-span-5">
                 <div class="uppercase tracking-[3px] text-xs font-semibold text-slate-500 mb-3">About me</div>
@@ -123,6 +135,13 @@
                     <p class="mt-4">My approach combines clean aesthetics with thoughtful interactions, always focused on solving real problems for real users.</p>
                 </div>
             </div>
+        </div>
+        
+        <!-- Decorative Image -->
+        <div class="hidden md:block absolute -right-6 top-1/2 transform -translate-y-1/2 opacity-10">
+            <img src="https://picsum.photos/id/1018/300/400" 
+                 alt="Decorative element" 
+                 class="rounded-3xl">
         </div>
     </div>
 
